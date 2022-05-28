@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
-import Link from 'next/link'
 import Head from 'next/head'
+import Contents from '../components/contents'
 
-const Page: React.FunctionComponent<any> = ({ children, title, backButton = true, showTitle = true }) => {
+const Page: React.FunctionComponent<any> = ({ children, title, showTitle = true, showContents = true}) => {
   return (
     <>
       <Head>
@@ -12,11 +11,13 @@ const Page: React.FunctionComponent<any> = ({ children, title, backButton = true
       {showTitle ? (
         <h1>{title}</h1>
       ) : ''}
-      {backButton ? (
-        <Link href="/">
-          <a>Back</a>
-        </Link>
+      {showContents ? (
+        <details>
+          <summary>Contents</summary>
+          <Contents mainPage={true} />
+        </details>
       ) : ''}
+      
       {children}
     </>
   )

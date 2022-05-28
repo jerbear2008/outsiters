@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
-import Link from 'next/link'
 import Page from '../components/page'
 
 const Plot: NextPage = () => {
   return (
     <Page title="Plot">
-      <p>The book was written by S. E. Hinton. She started writing the book when she was fifteen years old, and published it when she graduated highschool. She became a writer mainly because she read so much.</p>
+      <p>The book was written by S. E. Hinton. S. E. Hinton was born on July 22, 1948. She started writing the book when she was fifteen years old, and published it when she graduated highschool. She is an avid reader, which is how she has learned to expertly convey emotion in her writing.</p>
     </Page>
   )
 }

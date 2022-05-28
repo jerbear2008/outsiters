@@ -1,8 +1,15 @@
 import Link from 'next/link'
 
-const Contents: React.FC = () => {
+const Contents: React.FC<any> = ({ mainPage = false }) => {
   return (
     <ul>
+      {mainPage ? (
+        <li>
+          <Link href="/">
+            <a>Main Page</a>
+          </Link>
+        </li>
+      ) : ''}
       <li>
         <Link href="/plot">
           <a>Plot</a>
