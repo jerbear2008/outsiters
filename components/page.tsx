@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import Head from 'next/head'
 
-const Page: React.FunctionComponent = ({ children, title, backButton = true, showTitle = true }) => {
+const Page: React.FunctionComponent<any> = ({ children, title, backButton = true, showTitle = true }) => {
   return (
     <>
       <Head>
