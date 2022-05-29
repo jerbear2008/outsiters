@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Page from '../components/page'
 
-const Plot: NextPage = () => {
+const Characters: NextPage = () => {
   return (
-    <Page title="Plot">
+    <Page title="Characters">
       <h2>Greasers</h2>
       <h3>Ponyboy Curtis</h3>
       <p>Ponyboy Michael Curtis is the main character of The Outsiders. He has long light brown hair and greenish-gray eyes. He is smart, but does not use common sense.</p>
@@ -33,4 +33,4 @@ const Plot: NextPage = () => {
   )
 }
 
-export default Plot
+export default Characters
